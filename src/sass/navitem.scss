@@ -1,0 +1,20 @@
+.navItem{
+    list-style-type: none;
+    border-left: 1px solid #000;
+    
+
+    & a{
+        outline : none;
+        text-decoration : none;
+        color : #000;
+        font-size : 2em;
+        padding: 30px;
+        font-family: didot, serif;
+    }
+
+
+    & a.active, & a:active, & a:hover{
+        color: orange;
+    }
+
+}

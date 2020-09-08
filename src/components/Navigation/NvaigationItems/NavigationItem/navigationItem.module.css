@@ -1,0 +1,14 @@
+.navItem {
+  list-style-type: none;
+  border-left: 1px solid #000; }
+  .navItem a {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+    padding: 30px;
+    font-family: didot, serif; }
+  .navItem a.active, .navItem a:active, .navItem a:hover {
+    color: orange; }
+
+/*# sourceMappingURL=navigationItem.module.css.map */

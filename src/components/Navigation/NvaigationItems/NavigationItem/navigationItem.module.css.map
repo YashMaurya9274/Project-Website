@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ;EACJ,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,cAAc;EAG3B,UAAG;IACC,OAAO,EAAG,IAAI;IACd,eAAe,EAAG,IAAI;IACtB,KAAK,EAAG,IAAI;IACZ,SAAS,EAAG,GAAG;IACf,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,YAAY;EAI7B,sDAAiC;IAC7B,KAAK,EAAE,MAAM",
+"sources": ["../../../../sass/navitem.scss"],
+"names": [],
+"file": "navigationItem.module.css"
+}

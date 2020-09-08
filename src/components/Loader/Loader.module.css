@@ -1,56 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: consolas;
-}
+  font-family: consolas; }
 
 .wavy {
   position: relative;
-  -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
-}
-
-.wavy span {
-  position: relative;
-  display: inline-block;
-  color: white;
-  height: 30px;
-  width: 30px;
-  font-size: 2em;
-  margin-top: 330px;
-  text-transform: uppercase;
-  -webkit-animation: animate 1s ease-in-out infinite;
-          animation: animate 1s ease-in-out infinite;
-  -webkit-animation-delay: calc(0.1s * var(--i));
-          animation-delay: calc(0.1s * var(--i));
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  20% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-  40%, 100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
+  -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.2)); }
+  .wavy span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    font-size: 3em;
+    margin: 330px 0 0 5px;
+    text-transform: uppercase;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i)); }
 
 @keyframes animate {
   0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   20% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-  40%, 100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
+    transform: translateY(-20px); }
+  40%,100% {
+    transform: translateY(0px); } }
+
 /*# sourceMappingURL=Loader.module.css.map */

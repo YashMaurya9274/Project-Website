@@ -1,39 +1,44 @@
-import React, { Component } from 'react';
-import Loader from './components/Loader/Loader';
-import Welcome from './components/Welcome/Welcome';
-import './App.module.css';
+import React, {Component} from 'react';
+// import Loader from './Components/Loader/Loader';
+import Layout from './Components/UI/Layout/layout'
+import { BrowserRouter} from 'react-router-dom';
+import './App.css';
+// import homePage from './Components/homepage/homepage';
 
-class App extends Component{
-    constructor(props) {
-        super(props)
+
+
+
+class App extends Component { 
     
-        this.state = {
-            isloading : false
-        }
+    state = {
+      isLoading : true
     }
 
-    componentDidMount() {
-        setTimeout(()=>{
-            this.setState({isLoading : true})
-        },3200)
+    componentDidMount(){
+      setTimeout(()=>{
+        this.setState({isLoading : false})
+      },1200)
     }
 
-    render(){
-        return (
-            <div>
-                {this.state.isLoading ? <Welcome /> : <Loader />}
-            </div>
-        )
-    }
 
-    // render(){
-    //     return(
-    //         <div>
-    //             <Loader />
-    //         </div>
-    //     )
-    // }
-        
+ render(){
+
+    
+
+    return(
+
+      
+      <div className ="App">
+        <BrowserRouter>
+            <Layout>
+            </Layout>
+        </BrowserRouter>
+      </div>
+
+
+    );
+ }
 }
+
 
 export default App;
